@@ -40,7 +40,7 @@ origImg1.readFromFile("images/starry-night.png");
 origImg2.readFromFile("images/mona-lisa.png");
 origImg3.readFromFile("images/hokusai.png");
 ```
-To play with the pixelation effect, modify the parameters for:
+To play with the pixelation effect, modify the parameters:
 ```C++
 t1.prune(0.99, 8500);
 t2.prune(0.99, 8500);
