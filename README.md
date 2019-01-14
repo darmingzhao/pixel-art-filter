@@ -1,5 +1,5 @@
 # PixelArtFilter
-Pixel Art Filter is an image filter that pixelates PNG images using a lossy image compression algorithm, written in C++.
+Pixel Art Filter is an image filter that pixelates PNG images using a lossy image compression algorithm, written in C++ using clang and LodePNG.
 
 ![functionality1](https://user-images.githubusercontent.com/31530273/51096227-d989b480-176f-11e9-8c3b-be3d59a36daf.PNG)
 
