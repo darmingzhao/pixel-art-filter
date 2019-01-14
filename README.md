@@ -1,2 +1,51 @@
 # PixelArtFilter
-Image Filter that creates a pixel-like effect for PNG images using a lossy image compression algorithm
+Pixel Art Filter is an image filter that pixelates PNG images using a lossy image compression algorithm, written in C++.
+
+## Prerequisites
+To run this project after cloning it:
+### Add LodePNG
+LodePNG is used to encode and deocde PNG images:
+* Add lodepng.cpp and lodepng.h files from https://lodev.org/lodepng/ to the util/lodepng/ folder
+### Clang
+Clang is used to compile the project:
+* Installing clang on a local machine is different depending on the OS
+* A tutorial can be found online
+
+## Deployment
+To compile the project, use the command:
+```
+make
+```
+And once that is finished, run the project using:
+```
+./paf
+```
+Once this is completed the output will be in the images/ folder.
+
+You can also remove the compiler output values by running the command:
+```
+make clean
+```
+
+##Create different effects
+To add your own images, add PNG files to the images/ folder.
+
+Go to main.cpp and change the following parameters to the new image names
+```C++
+origImg1.readFromFile("images/starry-night.png");
+origImg2.readFromFile("images/mona-lisa.png");
+origImg3.readFromFile("images/hokusai.png");
+```
+To play with the pixelation effect, modify the parameters for:
+```C++
+t1.prune(0.99, 8500);
+t2.prune(0.99, 8500);
+t3.prune(0.95, 8500);
+```
+Finally, to change the output image names, change the following parameters:
+```C++
+pic1.writeToFile("images/output-starry-night.png");
+pic2.writeToFile("images/output-mona-lisa.png");
+pic3.writeToFile("images/output-hokusai.png");
+```
+##Functionality
