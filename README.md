@@ -1,6 +1,10 @@
 # PixelArtFilter
 Pixel Art Filter is an image filter that pixelates PNG images using a lossy image compression algorithm, written in C++.
 
+![functionality1](https://user-images.githubusercontent.com/31530273/51096227-d989b480-176f-11e9-8c3b-be3d59a36daf.PNG)
+
+![functionality2](https://user-images.githubusercontent.com/31530273/51096249-fe7e2780-176f-11e9-9caa-0967a5edcf48.PNG)
+
 ## Prerequisites
 To run this project after cloning it:
 ### Add LodePNG
@@ -48,4 +52,3 @@ pic1.writeToFile("images/output-starry-night.png");
 pic2.writeToFile("images/output-mona-lisa.png");
 pic3.writeToFile("images/output-hokusai.png");
 ```
-##Functionality
