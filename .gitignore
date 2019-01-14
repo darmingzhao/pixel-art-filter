@@ -1,1 +1,11 @@
+#ignore third party PNG encoder/decoder
+util/lodepng/
 
+#ignore makefile output
+lodepng.o
+RGBAPixel.o
+PNG.o
+twoDtree.o
+stats.o
+main.o
+paf*
