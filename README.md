@@ -6,7 +6,7 @@ Pixel Art Filter is an image filter that pixelates PNG images using a lossy imag
 ![functionality2](https://user-images.githubusercontent.com/31530273/51096249-fe7e2780-176f-11e9-9caa-0967a5edcf48.PNG)
 
 ## Prerequisites
-To run this project after cloning it:
+To run this project, after cloning it:
 ### Add LodePNG
 LodePNG is used to encode and deocde PNG images:
 * Add lodepng.cpp and lodepng.h files from https://lodev.org/lodepng/ to the util/lodepng/ folder
@@ -26,7 +26,7 @@ And once that is finished, run the project using:
 ```
 Once this is completed the output will be in the images/ folder.
 
-You can also remove the compiler output values by running the command:
+You can also remove the compiler output files by running the command:
 ```
 make clean
 ```
@@ -34,7 +34,7 @@ make clean
 ##Create different effects
 To add your own images, add PNG files to the images/ folder.
 
-Go to main.cpp and change the following parameters to the new image names
+Go to main.cpp and modify the parameters:
 ```C++
 origImg1.readFromFile("images/starry-night.png");
 origImg2.readFromFile("images/mona-lisa.png");
@@ -46,7 +46,7 @@ t1.prune(0.99, 8500);
 t2.prune(0.99, 8500);
 t3.prune(0.95, 8500);
 ```
-Finally, to change the output image names, change the following parameters:
+Finally, to change the output image names, modify the parameters:
 ```C++
 pic1.writeToFile("images/output-starry-night.png");
 pic2.writeToFile("images/output-mona-lisa.png");
